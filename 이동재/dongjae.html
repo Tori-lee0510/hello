@@ -4,30 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>이름 : 이동재 </header>
-  <main>
-    <div>MBTI : ENFP / ENTJ</div>
-    <div>좋아하는 노래 : 10cm 노래 다 좋아합니다</div>
-    <div>좋아하는 영화 : 비긴어게인과 같은 영화를 좋아합니다.</div>
-    <div>좋아하는 음식 : 김치와 다시마를 제외하곤 다 좋아합니다.</div>
-    <div>싫어하는 음식 : 김치와 다시마 입니다.</div>
-  </main>
-  <section>내소개 : 모두! 주목! 지금부터 나를 소개하겠어용!
-    저의 이름은 이동재입니다. 추가적인 내용은 위와같고 저는 원래 호텔관광경영학과를 전공하고<br/>
-    실제로 호텔 실습을 두번 갔다오고 롯데월드 어드벤처 부산에 실습을 마무리로 졸업을 하였습니다.<br/>
-    저의 장점은 친절함과 성실함, 사람을 좋아하는 것이지만 단점 또한 친절함과 성실함입니다. <br/>
-    면접이 아니니 이렇게 가볍게 이야기 하는것이니 이해해주시기 바랍니다! ㅎㅎ<br/>
-    실제로 저는 사람을 무척 좋아하고요 소속이 되어있으면 안점감을 느낀답니다 ㅎㅎ<br/>
-    이상입니다 너무 많이하면 제가 말이 많아지기에 ㅎㅎ
-  </section>
-  <section>취미는 겜돌이라고 할정도로 게임을 좋아하는데 요즘 못해서 아쉽습니다..ㅠㅠ<br/>
-    요리하는것도 좋아하고, 칵테일을 만드는것도 좋아합니다. 어릴때 운동도 좋아해서 운동도
-    취미로 많이 했습니다<br/> 수영,축구,검도,농구,배드민턴,무에타이, 헬스 등등 관심이 있으면
-    한달을 꼭 해보고 돌아옵니다! (지금 제 덩치를 보고 엥 운동한 몸이야? 라고 의심하시겠지만 여러분들이 생각하는게 맞습니다 헿)<br/>
-    아무튼 다양한 취미를 가져보려 노력중입니다!
-  </section>
-  <section>기타등등은 무엇을 써볼까요? 질문을 주시면 몇시간동안 대답해드릴 자신있습니다! 드루와!!</section>
+  <header class="header">
+    <div><a href="박지흔.html" class="next-btn">Prev</a></div>
+    <div><a href="index.html" class="header-font">Dong Jae Times</a></div>
+    <div><a href="정유석.html" class="next-btn">Next</a></div>
+  </header>
+  <button id="buttonA" onclick="showContent('A')">이름이 뭐에요?</button>
+  <button id="buttonB" onclick="showContent('B')">MBTI가 뭐에요?</button>
+  <button id="buttonC" onclick="showContent('C')">좋아하는 노래가 뭐에요??</button>
+  <button id="buttonD" onclick="showContent('D')">좋아하는 영화가 뭐에요?</button>
+  <button id="buttonE" onclick="showContent('E')">좋아하는 음식이 뭐에요?</button>
+  <button id="buttonF" onclick="showContent('F')">싫어하는 음식이 뭐에요?</button>
+  <button id="buttonG" onclick="showContent('G')">이전에 뭐했나요?</button>
+  <button id="buttonH" onclick="showContent('H')">취미가 뭐에요?</button>
+  <button id="buttonI" onclick="showContent('I')">운동 뭐하셨나요?</button>
+  <button id="buttonJ" onclick="showContent('J')">여행은 가보셨나요?</button>
+  <div id="contentA" class="font"><p>저의 이름은 이동재입니다.</p></div>
+  <div id="contentB" class="font"><p>MBTI는 ENFP와 ENTJ입니다.</p></div>
+  <div id="contentC" class="font"><p>10CM노래 다 좋아합니다.</p></div>
+  <div id="contentD" class="font"><p>비긴어게인과 같은 영화를 좋아합니다.</p></div>
+  <div id="contentE" class="font"><p>익은김치와 다시마를 제외하곤 다 좋아합니다.</p></div>
+  <div id="contentF" class="font"><p>익은김치와 다시마 입니다.(트라우마)</p></div>
+  <div id="contentG" class="font"><p>3성급 5성급 호텔에서 실습을 했고, 놀이공원에서 실습을 했습니다.</p></div>
+  <div id="contentH" class="font"><p>겜돌이라고 불릴정도로 게임을 좋아합니다.</p></div>
+  <div id="contentI" class="font"><BR>운동은 검도,수영,농구,배드민턴하고 헬스를 좀 했습니다.</BR>지금은 하는 운동 없습니다! 숨쉬기 운동정도...?</p></div>
+  <div id="contentJ" class="font"><p>여행은 가족들과 패키지로 좀 다녀왔습니다.</br>중국,일본,베트남,태국,베트남,말레이시아 등 다녀왔습니다..!</p></div>
+  <script src="index.js"></script>
 </body>
 </html>
