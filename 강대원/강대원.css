@@ -41,7 +41,7 @@ main {
   width: 100%;
   background-color: white;
   border-left: 2px solid var(--typing-text-color);
-  animation: animate 4s steps(24) infinite;
+  animation: animate 4s steps(20) infinite;
 }
 
 @keyframes animate {
