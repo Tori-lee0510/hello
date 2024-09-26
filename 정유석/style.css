@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  line-height: 4rem;
+  --main-color: #000;
+  --sub-color: rgb(96, 172, 62);
+  --white-color: #fff;
+}
+
+.iframe {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.middle {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  top: 17px;
+  left: 86px;
+  width: 325px;
+  height: 700px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 34px;
+  scale: .8;
+}
+
+.phone {
+  position: absolute;
+  top: -80px;
+  left: 33px;
+  width: 431px;
+  scale: .700;
+  outline: none;
+  z-index: -1;
+}
+
+iframe {
+  position: absolute;
+  width: 325px;
+  height: 680px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+main {
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 2rem;
+}
+
+main > h1 {
+  width: 790px;
+  font-size: 7rem;
+  line-height: 7rem;
+  padding-bottom: 2rem;
+}
+
+main > div {
+  width: 150px;
+  height: 100px;
+  border-radius: 34px;
+  border: 2px solid var(--sub-color);
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > div:hover {
+  background: var(--sub-color);
+  color: var(--white-color)
+}
+
+
+/* iframe */
+section {
+  padding: .5rem;
+  font-size: 5rem;
+}
+
+section > .title {
+  padding: 1rem 0;
+}
+
+section > img {
+  width: 100%;
+  border-radius: 34px;
+  margin:0 atuo;
+}
+
+section p, section div {
+    display: inline-block;
+}
+
+#key, #value {
+  border: 1px solid black;
+  width: 180px;
+  height: 90px;
+  line-height: 90px;
+  font-size: 4rem;
+  color: var(--sub-color);
+  margin-top: 1rem;
+  border-radius: 34px;
+  text-align: center;
+  vertical-align: middle;
+}
