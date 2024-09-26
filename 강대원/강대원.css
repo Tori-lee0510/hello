@@ -80,6 +80,10 @@ main {
   text-decoration: underline;
 }
 
+.gallay-header h3 {
+  text-align: center;
+}
+
 .images-container {
   padding: 50px 200px;
   display: grid;
