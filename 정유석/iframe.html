@@ -13,12 +13,23 @@
     <img src="assets/profile.png" class="img" alt="이미지입니다">
     <!-- <img src="assets/teacher.png" alt="이미지입니다"> -->
     <p class="title">안녕하세요<br>자기소개 페이지입니다</p>
-      <p>저의</p>
-      <div id="key"></div>
-      <p>is</p><br>
-      <div id="value"></div>
-      <p>입니다</p>
+    <p>저의</p>
+    <div id="key"></div>
+    <p>is</p><br>
+    <div id="value"></div>
+    <p>입니다</p>
   </section>
+  
+  <script>
+    const imgChange = document.querySelector(".img")
+    imgChange.addEventListener("mouseover", () => {
+      imgChange.src = "assets/teacher.png";
+    });
+    imgChange.addEventListener("mouseout", () => {
+      imgChange.src = "assets/profile.png";
+    });
+  </script>
+
 </body>
 
 </html>
