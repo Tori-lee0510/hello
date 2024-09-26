@@ -1,0 +1,102 @@
+:root {
+  --typing-text-color: black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 100px 0;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container .text {
+  position: relative;
+  color: var(--typing-text-color);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .text.first-text {
+  color: red;
+}
+
+.text.sec-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-left: 2px solid var(--typing-text-color);
+  animation: animate 4s steps(20) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.gallay-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallay-header h1 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.gallay-header img {
+  vertical-align: middle;
+  max-width: 700px;
+}
+
+.gallay-header h2 {
+  margin-bottom: 50px;
+}
+
+.gallay-header h2 span {
+  text-decoration: underline;
+}
+
+.gallay-header h3 {
+  text-align: center;
+}
+
+.images-container {
+  padding: 50px 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.images-container img {
+  max-width: 33%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+img {
+  border-radius: 10px;
+}
