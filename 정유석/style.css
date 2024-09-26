@@ -11,16 +11,16 @@
   --white-color: #fff;
 }
 
-.iframe {
-  position: absolute;
+/* .iframe {
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 
 .middle {
   margin: 0 auto;
   padding: 0;
-  position: relative;
+  position: absolute;
   top: 17px;
   left: 86px;
   width: 325px;

@@ -8,19 +8,38 @@ const personInfo = [
   { key: "메세지", value: "사랑해요" }
 ];
 
+// const introduceMyself = document.querySelector("#introduce")
+
+// for (let i = 0; i < personInfo.length; i++) {
+//   const abc = () => {
+//     document.getElementById('iframe').contentWindow.document.getElementById('key').innerText = personInfo[i].key;
+//     document.getElementById('iframe').contentWindow.document.getElementById('value').innerText = personInfo[i].value;
+//   }
+//   const last = document.createElement("div");
+//   last.textContent = personInfo[i].key;
+//   last.addEventListener("click", abc);
+//   last.classList.add(".link");
+
+//   introduceMyself.after(last);
+
+// =============================
+
 const introduceMyself = document.querySelector("#introduce")
+let currentElement = introduceMyself;
 
 for (let i = 0; i < personInfo.length; i++) {
   const abc = () => {
     document.getElementById('iframe').contentWindow.document.getElementById('key').innerText = personInfo[i].key;
     document.getElementById('iframe').contentWindow.document.getElementById('value').innerText = personInfo[i].value;
   }
-  const last = document.createElement("div")
-  last.textContent = personInfo[i].key
-  last.addEventListener("click", abc)
-  last.classList.add(".link")
+  const last = document.createElement("div");
+  last.textContent = personInfo[i].key;
+  last.addEventListener("click", abc);
+  last.classList.add(".link");
+  
 
-  introduceMyself.after(last)
+  currentElement.after(last);
+  currentElement = last;
 }
 
 
@@ -58,11 +77,3 @@ for (let i = 0; i < personInfo.length; i++) {
 //   document.getElementById('iframe').contentWindow.document.getElementById('key').innerText = personInfo[6].key;
 //   document.getElementById('iframe').contentWindow.document.getElementById('value').innerText = personInfo[6].value;
 // }
-
-const imgChange = document.getElementById('iframe').contentWindow.document.querySelector(".img")
-imgChange.addEventListener("mouseover", () => {
-  imgChange.src = "teacher.png";
-});
-imgChange.addEventListener("mouseout", () => {
-  imgChange.src = "profile.png";
-});
